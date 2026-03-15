@@ -25,7 +25,7 @@ const LoteCard = ({ lote }: { lote: Lote }) => {
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <span className="absolute top-3 left-3 bg-foreground/80 text-primary-foreground text-xs font-semibold px-3 py-1 rounded-sm uppercase tracking-wider">
-          {lote.titulo}
+          LOTE #{String(lote.id).padStart(3, "0")}
         </span>
       </div>
 

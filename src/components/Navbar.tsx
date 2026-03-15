@@ -26,7 +26,7 @@ const Navbar = ({ user }: NavbarProps) => {
             <Link to="/marketplace" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               COMPRAR
             </Link>
-            <Link to="/contato" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/vender" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               VENDER
             </Link>
             <Link to="/sobre" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">

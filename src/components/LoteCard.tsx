@@ -6,7 +6,7 @@ import type { Lote } from "@/data/lotes";
 
 const item = {
   hidden: { opacity: 0, y: 8 },
-  show: { opacity: 1, y: 0, transition: { ease: [0.25, 0.1, 0.25, 1], duration: 0.3 } },
+  show: { opacity: 1, y: 0, transition: { ease: [0.25, 0.1, 0.25, 1] as const, duration: 0.3 } },
 };
 
 const LoteCard = ({ lote }: { lote: Lote }) => {

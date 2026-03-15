@@ -110,7 +110,7 @@ const LoteDetail = () => {
                   className="bg-secondary border-0 min-h-[120px]"
                 />
                 <Button type="submit" className="w-full h-11 rounded-md font-semibold uppercase tracking-wider">
-                  Mandar Dúvida
+                  Enviar Interesse
                 </Button>
               </form>
             </div>

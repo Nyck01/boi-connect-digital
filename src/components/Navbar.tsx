@@ -55,7 +55,7 @@ const Navbar = ({ user }: NavbarProps) => {
         {menuOpen && (
           <div className="md:hidden pb-4 space-y-2">
             <Link to="/marketplace" className="block px-3 py-2 text-sm font-medium text-muted-foreground" onClick={() => setMenuOpen(false)}>COMPRAR</Link>
-            <Link to="/contato" className="block px-3 py-2 text-sm font-medium text-muted-foreground" onClick={() => setMenuOpen(false)}>VENDER</Link>
+            <Link to="/vender" className="block px-3 py-2 text-sm font-medium text-muted-foreground" onClick={() => setMenuOpen(false)}>VENDER</Link>
             <Link to="/sobre" className="block px-3 py-2 text-sm font-medium text-muted-foreground" onClick={() => setMenuOpen(false)}>LINKS ÚTEIS</Link>
             <Button onClick={() => { navigate(user ? "/dashboard" : "/login"); setMenuOpen(false); }} className="w-full rounded-full gap-2">
               <User className="h-4 w-4" />

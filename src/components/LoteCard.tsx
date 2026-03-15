@@ -47,7 +47,7 @@ const LoteCard = ({ lote }: { lote: Lote }) => {
             className="flex-1 rounded-md text-xs font-semibold uppercase tracking-wider"
             onClick={(e) => { e.stopPropagation(); navigate(`/lote/${lote.id}`); }}
           >
-            Ver Lote
+            Analisar Lote
           </Button>
           <ShieldCheck className="h-5 w-5 text-muted-foreground" />
         </div>

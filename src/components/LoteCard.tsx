@@ -32,7 +32,7 @@ const LoteCard = ({ lote }: { lote: Lote }) => {
       <div className="p-4 space-y-3">
         <div className="flex items-center justify-between text-sm">
           <span className="font-medium tabular-nums">{lote.quantidade} Cabeças</span>
-          <span className="text-muted-foreground tabular-nums">{lote.peso_medio} kg</span>
+          <span className="text-muted-foreground tabular-nums">Peso médio: {lote.peso_medio} kg</span>
         </div>
 
         <div className="flex items-center gap-2 text-xs text-muted-foreground">

@@ -53,7 +53,7 @@ const LoteDetail = () => {
           <div className="flex flex-wrap gap-3 mb-6">
             {[
               `${lote.quantidade} ${lote.tipo}s`,
-              `${lote.peso_medio} kg`,
+              `Peso médio: ${lote.peso_medio} kg`,
               lote.raca,
               lote.localizacao,
             ].map((tag) => (

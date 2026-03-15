@@ -53,7 +53,7 @@ const LoteDetail = () => {
           <div className="flex flex-wrap gap-3 mb-6">
             {[
               `${lote.quantidade} ${lote.tipo}s`,
-              `${lote.peso_medio} kg`,
+              `Peso médio: ${lote.peso_medio} kg`,
               lote.raca,
               lote.localizacao,
             ].map((tag) => (
@@ -110,7 +110,7 @@ const LoteDetail = () => {
                   className="bg-secondary border-0 min-h-[120px]"
                 />
                 <Button type="submit" className="w-full h-11 rounded-md font-semibold uppercase tracking-wider">
-                  Mandar Dúvida
+                  Enviar Interesse
                 </Button>
               </form>
             </div>

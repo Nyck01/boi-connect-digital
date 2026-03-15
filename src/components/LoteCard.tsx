@@ -25,14 +25,14 @@ const LoteCard = ({ lote }: { lote: Lote }) => {
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <span className="absolute top-3 left-3 bg-foreground/80 text-primary-foreground text-xs font-semibold px-3 py-1 rounded-sm uppercase tracking-wider">
-          {lote.titulo}
+          LOTE #{String(lote.id).padStart(3, "0")}
         </span>
       </div>
 
       <div className="p-4 space-y-3">
         <div className="flex items-center justify-between text-sm">
           <span className="font-medium tabular-nums">{lote.quantidade} Cabeças</span>
-          <span className="text-muted-foreground tabular-nums">{lote.peso_medio} kg</span>
+          <span className="text-muted-foreground tabular-nums">Peso médio: {lote.peso_medio} kg</span>
         </div>
 
         <div className="flex items-center gap-2 text-xs text-muted-foreground">
@@ -47,7 +47,7 @@ const LoteCard = ({ lote }: { lote: Lote }) => {
             className="flex-1 rounded-md text-xs font-semibold uppercase tracking-wider"
             onClick={(e) => { e.stopPropagation(); navigate(`/lote/${lote.id}`); }}
           >
-            Ver Lote
+            Analisar Lote
           </Button>
           <ShieldCheck className="h-5 w-5 text-muted-foreground" />
         </div>

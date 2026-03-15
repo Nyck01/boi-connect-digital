@@ -10,6 +10,7 @@ import Sobre from "./pages/Sobre";
 import Contato from "./pages/Contato";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
+import Vender from "./pages/Vender";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/lote/:id" element={<LoteDetail />} />
           <Route path="/sobre" element={<Sobre />} />
+          <Route path="/vender" element={<Vender />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
